@@ -4,9 +4,26 @@ Playbook supplies shared documentation, agent instructions, and a catalog of ski
 Each consuming repository chooses when to update and commits the resulting changes.
 There is no automatic postinstall or cross-repository write.
 
+## Node runtime
+
+Use the Node version in `.nvmrc`. On Windows, older Node 24 releases can abort after
+a successful skills command with `UV_HANDLE_CLOSING`. Node 24.20 fixes the shutdown
+bug; the skills updater also passes on Node 26. See the
+[Node 24.20 release notes](https://nodejs.org/fr/blog/release/v24.20.0).
+
+With fnm, install and select the pinned version before running package scripts:
+
+```sh
+fnm install
+fnm use
+```
+
 ## Connect a repository
 
 Run these commands from a branch in the consuming repository.
+
+Use [the example Node pin](../examples/consumer/.nvmrc) for the repository's `.nvmrc`,
+and select that runtime before installing dependencies.
 
 ```sh
 pnpm add -D @betterapps/playbook@github:betterapps-hq/playbook rulesync@43.5.0 skills@1.7.6
