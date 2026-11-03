@@ -1,0 +1,22 @@
+{
+  "name": "@betterapps/playbook",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@12.10.1",
+  "type": "module",
+  "engines": { "node": ">=22.22.0" },
+  "bin": { "playbook-sync": "scripts/sync.mjs" },
+  "files": [".rulesync/rules", "best-practices", "scripts/sync-docs.mjs", "scripts/sync.mjs"],
+  "scripts": {
+    "skills:add": "skills add",
+    "skills:update": "skills update -p",
+    "skills:remove": "skills remove",
+    "skills:check": "skills check",
+    "rules:sync": "rulesync generate",
+    "rules:check": "rulesync generate --check",
+    "test": "node --test",
+    "verify": "node --test && rulesync generate --check"
+  },
+  "dependencies": { "rulesync": "43.5.0" },
+  "devDependencies": { "skills": "1.7.6" }
+}

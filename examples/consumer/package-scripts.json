@@ -1,0 +1,9 @@
+{
+  "guidance:sync": "playbook-sync",
+  "guidance:check": "playbook-sync --check",
+  "guidance:update": "pnpm update @betterapps/playbook --latest && playbook-sync",
+  "skills:add": "skills add",
+  "skills:update": "skills update -p",
+  "skills:remove": "skills remove",
+  "skills:check": "skills check"
+}
