@@ -4,7 +4,7 @@
   "private": true,
   "packageManager": "pnpm@12.10.1",
   "type": "module",
-  "engines": { "node": ">=22.22.0" },
+  "engines": { "node": "^24.20.0 || >=26.0.0" },
   "bin": { "playbook-sync": "scripts/sync.mjs" },
   "files": [".rulesync/rules", "best-practices", "scripts/sync-docs.mjs", "scripts/sync.mjs"],
   "scripts": {
