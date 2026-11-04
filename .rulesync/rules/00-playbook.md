@@ -24,6 +24,8 @@ changing the rules.
 - Start at the [best-practices index](best-practices/README.md). For every code change, apply the
   [coding principles](best-practices/principles.md) and [conventions](best-practices/conventions.md).
 - Check the [preferred tech stack](best-practices/tech-stack.md) and discuss new libraries before adding them.
+- Before adding a script to any `package.json`, get explicit user permission for the script name and command.
+  If an existing script or a direct `vp` command covers the task, use it.
 
 ## Copy and UX
 
@@ -32,8 +34,6 @@ changing the rules.
   empty states, and accessible names. Use [copy-editing](.agents/skills/copy-editing/SKILL.md) for marketing copy.
   Apply [brand-voice](.agents/skills/brand-voice/SKILL.md) when shaping the voice or
   [deslopify-writing](.agents/skills/deslopify-writing/SKILL.md) when checking for formulaic phrasing.
-- When available, use Fluent Agent MCP to check customer-facing text against its content and interaction guidance.
-  Report when the service is unavailable. Avoid dot glyphs as visual separators.
 - Exercise changed user workflows in the running app with the integrated browser. Check desktop and mobile layouts,
   keyboard use, and accessible names.
 
