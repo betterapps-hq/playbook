@@ -1,0 +1,3 @@
+# Check out LF whatever core.autocrlf says. The skills CLI clones this repository and copies the files into other
+# repositories, so CRLF from a Windows clone would land there as changed files and change the skills lock hashes.
+* text=auto eol=lf
